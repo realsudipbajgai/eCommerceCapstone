@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+/* Responsive design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: rgb(2, 0, 36);
+    background: rgb(17, 16, 38);
+    background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgba(30, 101, 162, 1) 51%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Wrapper section */
+.wrapper {
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Header */
+header {
+
+    background: linear-gradient(90deg, rgba(17,16,38,0.2) 0%, rgba(30,101,162,0.2) 51%, rgba(0,0,0,0.2) 100%);
+    background-image: url("../images/home-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* Header Logo */
+.header-logo{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header-logo img{
+    width: 256px;
+    height: auto;
+}
+
+.header-topbar{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.header-topbar a {
+    color: #000000;
+}
+#searchBarBox {
+    width: 30%;
+    display: -webkit-flex;
+    display: flex;;
+    align-items: center;
+    grid-column: col 2 / span 3;
+    grid-row: row ;
+  }
+  #searchBarBox label
+  {
+    display: none;
+  }
+  #searchBarBox input[type="text"] {
+    height: 30px;
+    font-size: 1em;
+  }
+  
+  #searchBarBox input[type="submit"] {
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border-style: none;
+    font-size: 1em;
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  }
+  
+  #searchBarBox input[type="submit"]:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+
+/* Navigation bar */
+nav {
+    background: rgb(17, 16, 38);
+    background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Hamburger button */
+.menu-icon {
+    display: none;
+}
+
+/* Filter bar */
+.filter-bar {
+    width: 200px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: none;
+}
+
+/* Responsive navigation */
+@media (max-width: 960px) {
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .menu-icon:hover {
+        background-color: #555;
+    }
+
+    .filter-bar {
+        display: block;
+    }
+}
+
+
+
+/*#region homepage*/
+.cover-image {
+    max-width: 90%;
+}
+
+.text-box {
+    padding: 10px;
+}
+
+/*endregion homepage*/
+/*#region admin page*/
+.admin-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    background-color: #ccc;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/*#endregion admin page*/
+/*#region transformer*/
+.t-image {
+    max-width: 150px;
+    border: 5px solid #333;
+    border-radius: 5px;
+}
+
+a.t-name {
+    text-decoration: none;
+}
+
+a.t-name:link {
+    color: #ff0000;
+}
+
+a.t-name:visited {
+    color: #0000ff;
+}
+
+a.t-name:hover {
+    color: #ffcc00;
+}
+
+/*#endregion transformer*/
+/*#region text-align area*/
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*#endregion text-align area*/
+
+/*#region edit form*/
+.edit-transformer-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.edit-transformer-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edit-transformer-form input[type="text"],
+.edit-transformer-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-transformer-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.t-thumbnail {
+    max-width: 256px;
+    height: auto;
+}
+
+/*#endregion edit form*/
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/*#region cars*/
+#car-index{
+    border-collapse: collapse;
+    
+}
+#car-index td, table#car-index th {
+    border: 1px solid;
+}
+#car-index .header{
+    background: linear-gradient(90deg, rgba(17,16,38,1) 0%, rgba(30,101,162,1) 31%, rgba(0,0,0,1) 100%);
+    color: white;
+    max-width: 100%;
+    padding: 5px;
+    
+}
+#car-index .car-detail{
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+#car-index .car-detail img{
+    max-width: 400px;
+    height: auto;
+}
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #17c256;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .buy-button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .buy-button svg path {
+    transition: 400ms;
+  }
+  
+  .buy-button:hover {
+    background-color: transparent;
+  }
+  
+  .buy-button:hover .text {
+    color: #181717;
+  }
+  
+  .buy-button:hover svg path {
+    fill: #181717;
+  }
+a.car-name-link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+.car-field{
+    font-size: 14px;
+    max-width: 100%;
+}
+/*#endregion cars*/
+/*#region car-info*/
+.car-info{
+
+}
+.car-info .title{
+    color: rgb(13, 13, 116);
+    font-size: 20px;
+}
+/*#endregion car-info*/
+/*#region horizontal navbar*/
+#horizontal-nav {}
+.index-car-image{
+    max-width: 400px;
+    height: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 24px;
+}
+
+/*#endregion horizontal navbar*/
+
+/*#region car filtering sidebar*/
+#horizontal-nav {}
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .filter-section {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .sidebar select,
+  .sidebar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sidebar button[type="submit"] {
+    background-color: #28a745;
+  }
+  
+  .sidebar button[type="reset"] {
+    background-color: #dc3545;
+  }
+/*#endregion car filtering sidebar*/
+
+/*#region car-info page*/
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .car-details img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .car-info {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+  }
+  
+  .car-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .car-info p {
+    margin: 5px 0;
+  }
+  
+ 
+  .purchase {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+/*#endregion car-info page*/
+
+/*#region footer*/
+footer {
+    clear: both;
+    min-height: 220px;
+    background-color: rgb(36, 36, 36);
+    padding: 8px;
+  }
+  
+  .footer_column {
+    padding: 5px;
+  }
+  
+  .footer_column li {
+    list-style-type: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+    margin-bottom: 0.3em;
+  }
+  
+  .footer_column li:first-of-type {
+    font-size: 1.5em;
+    color: rgb(149, 180, 202);
+    margin-bottom: 0.6em;
+    font-weight: 700;
+  }
+  
+  .footer_column a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer_column a:hover {
+    color: #c9daf8;
+  }
+  
+  .footer_column a:active {
+    color: #95aeda;
+  }
+  
+  .footer_column a.logo {
+    margin: 5px;
+    width: 64px;
+    height: 64px;
+  }
+  
+  #copyright {
+    font-size: 0.8em;
+    color: #fff;
+    clear: both;
+    height: 20px;
+    text-align: center;
+  }
+  
+  #last_modified{
+    text-align: center;
+    color: #fff;
+    font-size: 0.7em;
+  }
+  /*#endregion footer*/

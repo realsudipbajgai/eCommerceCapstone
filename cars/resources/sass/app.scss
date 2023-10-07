@@ -1,0 +1,1353 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Roboto:ital@1&display=swap');
+
+
+
+/* Responsive design */
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  background: rgb(2, 0, 36);
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgba(30, 101, 162, 1) 51%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Wrapper section */
+.wrapper {
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Header */
+header {
+
+  background: linear-gradient(90deg, rgba(17, 16, 38, 0.2) 0%, rgba(30, 101, 162, 0.2) 51%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: url("../../public/images/home-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+
+}
+
+/* Header Logo */
+.header-logo {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header-logo img {
+  width: 256px;
+  height: auto;
+}
+
+.header-topbar {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header-topbar a {
+  color: #000000;
+}
+
+#searchBarBox {
+  max-width: 300px;
+  display: -webkit-flex;
+  display: flex;
+  ;
+  align-items: center;
+  grid-column: col 2 / span 3;
+  grid-row: row;
+  position: relative;
+}
+
+#searchBarBox label {
+  display: none;
+}
+
+#searchBarBox input[type="text"] {
+  border: #134376 3px solid;
+  height: 35px;
+  font-size: 1em;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+#searchBarBox button[type="submit"] {
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  width: 30px;
+  height: 30px;
+
+
+}
+
+#searchBarBox i[type="submit"]:hover {}
+
+/* Navigation bar */
+nav {
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+  color: white;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Hamburger button */
+.menu-icon {
+  display: none;
+}
+
+/* Filter bar */
+.filter-bar {
+  width: 200px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: none;
+
+}
+
+/* Responsive navigation */
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .menu-icon:hover {
+    background-color: #555;
+  }
+
+  .filter-bar {
+    display: block;
+  }
+}
+
+/*#region homepage*/
+.container-fluid {
+  padding: 0px;
+}
+
+/*#region layout*/
+
+
+/*#region homepage*/
+.cover-image {
+  max-width: 600px;
+}
+
+.text-box {
+  padding: 10px;
+}
+
+.introduction-banner {
+  background-image: url("../../public/images/homepage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 1.25rem;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-box {
+  background-color: #000000a7;
+}
+
+.service-cover {
+  text-align: center;
+}
+
+.car-service {
+  background-image: url("../../public/images/car-service.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  color: white;
+  text-align: left;
+  padding: 120px;
+}
+
+.sell-trade-banner {
+  background-image: url("../../public/images/sellandtrade.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  color: white;
+  text-align: left;
+  padding: 120px;
+}
+
+.brands-cover {
+  background: rgb(28, 28, 37);
+  background: linear-gradient(90deg, rgba(28, 28, 37, 1) 0%, rgba(9, 45, 77, 1) 51%, rgba(28, 29, 32, 1) 100%);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+
+.brands-cover .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.brands-cover .logo-container img {
+  max-width: 100px;
+  height: auto;
+}
+
+#image-slider-row {
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 1) 0%, rgb(5, 17, 33) 13%, rgb(4, 5, 38) 25%, rgba(0, 18, 56, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+#imageSlider {
+  max-width: 100%;
+}
+
+#imageSlider .swiper-wrapper {
+  max-width: 500px;
+}
+
+.sloganBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  line-height: 1.2;
+
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+/*endregion homepage*/
+/*#region admin page*/
+.admin-panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.menu ul li a:hover {
+  background-color: #ccc;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/*#endregion admin page*/
+/*#region transformer*/
+.t-image {
+  max-width: 150px;
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+
+a.t-name {
+  text-decoration: none;
+}
+
+a.t-name:link {
+  color: #ff0000;
+}
+
+a.t-name:visited {
+  color: #0000ff;
+}
+
+a.t-name:hover {
+  color: #ffcc00;
+}
+
+/*#endregion transformer*/
+/*#region text-align area*/
+.left-text {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/*#endregion text-align area*/
+
+/*#region edit form*/
+.edit-transformer-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.edit-transformer-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-transformer-form input[type="text"],
+.edit-transformer-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.edit-transformer-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.t-thumbnail {
+  max-width: 256px;
+  height: auto;
+}
+
+/*#endregion edit form*/
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/*#region cars*/
+#car-index-page {
+  background: rgb(16, 31, 77);
+  background: linear-gradient(90deg, rgba(16, 31, 77, 1) 0%, rgb(25, 87, 131) 51%, rgba(23, 44, 77, 1) 100%);
+  padding-bottom: 20px;
+}
+
+#car-index-page .main-content {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#car-index-page .main-content .col-content {
+  margin: 10px;
+}
+
+#car-index-page h1 {
+  color: white;
+}
+
+.no-car-result {
+  margin-left: 20px;
+  padding-left: 20px;
+
+  height: 100%;
+}
+
+.no-car-result .text-box {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#car-index {
+
+  border-collapse: collapse;
+  display: grid;
+  gap: 50px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+@media (min-width: 600px) {
+  #car-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  #car-index {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  #car-index {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media (min-width: 1800px) {
+  #car-index {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+
+#car-index td,
+table#car-index th {
+  border: 1px solid;
+}
+
+#car-index .header {
+  background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgba(30, 101, 162, 1) 31%, rgba(0, 0, 0, 1) 100%);
+  color: white;
+  max-width: 100%;
+  padding: 5px;
+
+}
+
+#car-index .car-detail {
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  max-height: 360px;
+
+}
+
+.car-detail .card-image {
+  max-width: 300px;
+  height: 225px;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+
+.car-detail .card-image:hover {
+  opacity: 1;
+}
+
+.car-detail .card-image .price-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(16, 31, 77);
+  background: linear-gradient(90deg, rgba(16, 31, 77, 0) 0%, rgba(25, 61, 105, 0.5046219171262255) 25%, rgba(34, 92, 134, 0.7511205165660014) 51%, rgba(23, 44, 77, 1) 100%);
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  text-align: right;
+}
+
+.buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #17c256;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.buy-button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.buy-button svg path {
+  transition: 400ms;
+}
+
+.buy-button:hover {
+  background-color: transparent;
+}
+
+.buy-button:hover .text {
+  color: #181717;
+}
+
+.buy-button:hover svg path {
+  fill: #181717;
+}
+
+a.car-name-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(27, 63, 170);
+}
+
+.field-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.field-container img {
+  max-width: 16px;
+  height: auto;
+  position: relative;
+}
+
+
+.car-field {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.car-detail .header {
+  color: white;
+}
+
+/*#endregion cars*/
+/*#region car-info*/
+.car-info {}
+
+.car-info .title {
+  color: rgb(13, 13, 116);
+  font-size: 20px;
+}
+
+/*#endregion car-info*/
+/*#region horizontal navbar*/
+#horizontal-nav {}
+
+.index-car-image {
+  max-width: 400px;
+  height: auto;
+}
+
+#horizontal-nav .navbar-nav .nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+/*#endregion horizontal navbar*/
+
+/*#region car filtering sidebar*/
+#horizontal-nav {}
+
+/* menu icon for sidebar Styles */
+.menu-icon-filter {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 30%;
+  left: 0;
+
+  z-index: 9999;
+  background-color: #486a91;
+  border-radius: 15px;
+
+  color: white;
+  ;
+}
+
+.menu-icon-filter .filter-button {
+  rotate: 90deg;
+  padding: 25px 10px;
+}
+
+.menu-icon-filter .back-button {
+  padding: 10px;
+}
+
+
+/* Show menu icon on smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-icon-filter {
+    display: block;
+  }
+}
+
+
+.sidebar {
+  max-width: 250px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.phone {
+  display: none;
+  position: fixed;
+  margin-bottom: 20px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+.sidebar .category-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar .category-list .category {
+  display: block;
+}
+
+.sidebar .category-list a {
+  padding: 5px;
+  background-color: #132e4b;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.sidebar .header {
+  background-color: #132e4b;
+  color: white;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.sidebar select,
+.sidebar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #132e4b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar button[type="submit"] {
+  background-color: #132e4b;
+}
+
+.sidebar button[type="reset"] {
+  background-color: #132e4b;
+}
+
+/*#endregion car filtering sidebar*/
+
+/*#region pagination*/
+.pager-section {
+  margin-top: 20px;
+
+}
+
+.pager {
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.pager li {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 3px;
+}
+
+
+
+.pager\:number {
+  text-decoration: none;
+  --size: 32px;
+  --margin: 6px;
+  margin: 0 var(--margin);
+  border-radius: 6px;
+  background: #202020;
+  max-width: auto;
+  min-width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+  color: white;
+
+  @media (hover: hover) {
+    &:hover {
+      background: lighten(#8e92a4, 3%);
+      text-decoration: none;
+    }
+  }
+
+  &:active {
+    background: lighten(#202020, 3%);
+    text-decoration: none;
+  }
+}
+
+.pager\:active {
+  background: lighten(#202020, 3%);
+  position: relative;
+}
+
+/*#endregion pagination*/
+
+/*#region car-info page*/
+.car-details {
+  align-items: center;
+  padding: 10px;
+}
+
+.car-details img {
+  max-width: 300px;
+  height: auto;
+}
+
+.car-info {
+
+  max-width: 300px;
+}
+
+.car-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.car-info p {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+
+.purchase {
+  padding: 10px 20px;
+  background-color: #134376;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.purchase:hover {
+  background-color: #2263a7
+}
+
+
+
+/*#endregion car-info page*/
+
+/*#region orders page*/
+.orders-page {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.orders-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-page table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+.orders-page th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-page thead {
+  background: rgb(20, 53, 150);
+  background: linear-gradient(90deg, rgba(20, 53, 150, 1) 0%, rgba(23, 63, 92, 1) 51%, rgba(23, 58, 111, 1) 100%);
+  color: white;
+}
+
+.orders-page tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.order-page a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*#endregion orders page*/
+
+/*#region order detail*/
+.orders-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.orders-details h1,
+.orders-details h2,
+.orders-details h3 {
+  color: #0e335c;
+  font-weight: 700;
+}
+
+.orders-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-summary table th,
+.item-summary table td {
+  margin-bottom: 10px;
+}
+
+.item-summary {
+  width: 100%;
+}
+
+.item-summary table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.item-summary th,
+.item-summary td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.item-summary th {
+  color: white;
+  background: rgb(2, 0, 36);
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgb(81, 73, 171) 0%, rgb(25, 37, 47) 51%, rgb(8, 17, 63) 100%);
+}
+
+.item-summary tfoot td {
+  text-align: right;
+}
+
+.order-detail-table th,
+.order-detail-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.order-detail-table th {
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgb(1, 31, 90) 100%);
+  color: white;
+}
+
+/*#endregion order detail*/
+
+/*#region checkout*/
+.checkout {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.checkout .checkout form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout .checkout-form {
+  max-width: 500px;
+  background: rgb(47, 91, 250);
+  background: linear-gradient(90deg, rgb(20, 51, 65) 0%, rgb(29, 66, 100) 51%, rgb(8, 4, 90) 100%);
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.checkout .checkout-form input {
+  width: 90%;
+}
+
+.checkout .checkout-form label,
+.checkout .cart-summary table th,
+.checkout .cart-summary table td {
+  margin-bottom: 10px;
+}
+
+.checkout .checkout-form label {
+  display: block;
+}
+
+.checkout .cart-summary {
+  width: 80%;
+}
+
+.checkout .cart-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.checkout .cart-summary th,
+.checkout .cart-summary td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.checkout .cart-summary th {
+  color: white;
+  background: rgb(2, 0, 36);
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgba(17, 16, 38, 1) 0%, rgb(8, 38, 65) 51%, rgba(0, 0, 0, 1) 100%);
+}
+
+.checkout .cart-summary tfoot td {
+  text-align: right;
+}
+
+.checkout button {
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgb(102, 168, 197) 0%, rgb(47, 97, 141) 51%, rgba(0, 0, 0, 1) 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background: linear-gradient(90deg, rgb(173, 196, 206) 0%, rgb(83, 141, 192) 51%, rgb(62, 106, 201) 100%);
+  background-color: #031f3e;
+}
+
+#tax {
+  border-collapse: collapse;
+  width: 100%;
+  border: 0px;
+}
+
+#tax th,
+#tax td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: #000000 1px solid;
+}
+
+#tax th {
+  color: #000000;
+  background: rgb(204, 204, 213);
+  background: linear-gradient(90deg, rgb(233, 233, 241) 0%, rgb(186, 204, 221) 51%, rgb(170, 183, 236) 100%);
+}
+
+
+#tax tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*#endregion checkout*/
+/*#region card payment*/
+.card-payment {
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(17, 16, 38);
+  background: linear-gradient(90deg, rgb(43, 43, 52) 0%, rgb(41, 57, 70)50%, rgb(12, 18, 41) 100%);
+  border-radius: 20px;
+  text-align: left;
+  color: white;
+}
+
+.card-payment label {
+  display: block;
+  margin-left: 5px;
+}
+
+.card-payment .dateContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card-payment .cvv-label {
+  margin-bottom: 0px;
+}
+
+.card-payment #card_num,
+.card-payment #cvv {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.card-payment select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 50px;
+  margin-left: 5px;
+  width: 15%;
+}
+
+.card-payment #cvv {
+  width: 20%;
+
+}
+
+.card-payment .dateContent {
+  margin-bottom: 10px;
+}
+
+.card-payment input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-payment input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*#endregion card payment*/
+
+/*#region contactPage*/
+.contact-page {
+  background: linear-gradient(90deg, rgb(17, 16, 38) 0%, rgb(30, 100, 162) 50%, rgb(0, 0, 0) 100%);
+  padding-bottom: 20px;
+  color: white;
+
+
+}
+
+.contact-page h1 {
+  margin-bottom: 0;
+}
+
+.contact-page .form-group {}
+
+.contact-page form label {
+  color: white;
+}
+
+.contact-page form {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.contact-page form button {
+  display: block;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(90deg, rgb(102, 197, 124) 0%, rgb(47, 141, 81) 51%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.contact-page form button:hover {
+  background: linear-gradient(90deg, rgb(147, 220, 164) 0%, rgb(64, 197, 113) 51%, rgb(46, 182, 25) 100%);
+}
+
+/*#endregion contactPage*.
+
+/*#region loginPage*/
+#loginPage,
+#registerPage {
+  background: rgb(35, 51, 101);
+  background: radial-gradient(circle, rgba(35, 51, 101, 0) 0%, rgba(15, 45, 83, 0.5046219171262255) 13%, rgba(6, 66, 117, 0.7511205165660014) 25%, rgba(0, 18, 56, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+#loginPage .sign-form,
+#registerPage .sign-form {
+  border-radius: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+#loginPage .form-header,
+#registerPage .form-header {
+  text-align: center;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(15, 45, 83, 1) 0%, rgba(32, 113, 182, 1) 25%, rgba(2, 50, 152, 1) 75%, rgba(0, 44, 255, 1) 100%);
+}
+
+#loginPage button,
+#registerPage button {
+  padding: 10px 20px;
+  font-size: 1.15em;
+  border-radius: 20px;
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(30, 73, 164, 1) 17%, rgba(0, 116, 255, 1) 100%);
+}
+
+#loginPage button:hover,
+#registerPage button:hover {
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(2, 50, 152, 1) 17%, rgba(0, 44, 255, 1) 100%);
+}
+
+/*#endregion loginPage*/
+/*#region footer*/
+footer {
+  min-height: 220px;
+  background-color: rgb(36, 36, 36);
+  padding: 8px;
+}
+
+.footer_column {
+  padding: 5px;
+}
+
+.footer_column li {
+  list-style-type: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.footer_column li:first-of-type {
+  font-size: 1.5em;
+  color: rgb(149, 180, 202);
+  margin-bottom: 0.6em;
+  font-weight: 700;
+}
+
+.footer_column a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_column a:hover {
+  color: #c9daf8;
+}
+
+.footer_column a:active {
+  color: #95aeda;
+}
+
+.footer_column a.logo {
+  margin: 5px;
+  width: 64px;
+  height: 64px;
+}
+
+#copyright {
+  font-size: 0.8em;
+  color: #fff;
+  clear: both;
+
+  text-align: center;
+}
+
+#last_modified {
+  text-align: center;
+  color: #fff;
+  font-size: 0.7em;
+}
+
+/*#endregion footer*/
+//Start of User profile styles
+#profilePage {
+  padding: 20px;
+  background: rgb(35, 51, 101);
+  background: radial-gradient(circle, rgba(35, 51, 101, 0) 0%, rgba(15, 45, 83, 0.5046219171262255) 13%, rgba(6, 66, 117, 0.7511205165660014) 25%, rgba(0, 18, 56, 1) 75%, rgba(0, 0, 0, 1) 100%);
+}
+#profilePage h1, #profilePage label{
+  color:white;
+}
+#profilePage .edit-form{
+  max-width: 600px;
+}
+#profilePage .info-form {
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+#profilePage.form-header {
+  text-align: center;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(15, 45, 83, 1) 0%, rgba(32, 113, 182, 1) 25%, rgba(2, 50, 152, 1) 75%, rgba(0, 44, 255, 1) 100%);
+}
+
+#profilePage .edit-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1 rem;
+  border-radius: 20px;
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(30, 73, 164, 1) 17%, rgba(0, 116, 255, 1) 100%);
+}
+
+#profilePage .edit-button:hover {
+  background: rgb(35, 51, 101);
+  background: linear-gradient(90deg, rgba(35, 51, 101, 0) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(2, 50, 152, 1) 17%, rgba(0, 44, 255, 1) 100%);
+}
+#profilePage .update-button {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1 rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,88,1) 11%, rgba(3,65,15,1) 100%); 
+}
+
+#profilePage .update-button:hover {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,88,1) 11%, rgba(8,175,40,1) 100%); 
+}
+
+  .user-profile-image {
+  margin-left:  auto;
+  margin-right:  auto;
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+
+
+
+
+//End of User profile styles
